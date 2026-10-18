@@ -21,7 +21,7 @@ Movie data is provided by [The Movie Database (TMDB)](https://www.themoviedb.org
 
 ## 📸 Screenshots
 
-See the full app walkthrough (26 screens) in [`MovieDiary-Screenshots.pdf`](./MovieDiary-Screenshots.pdf).
+See the full app walkthrough in [`MovieDiary-Screenshots.pdf`](./MovieDiary-Screenshots.pdf).
 
 ## ✨ Features
 
@@ -72,6 +72,10 @@ See the full app walkthrough (26 screens) in [`MovieDiary-Screenshots.pdf`](./Mo
 - Cloud sync for diary entries
 - Move to Kotlin and MVVM
 
+## 📌 Note
+
+The source code is not published in this repository. This repo only showcases the app through screenshots and documentation.
+
 ---
 
 # 🚔 Crime Reporting System
@@ -107,7 +111,7 @@ The system follows a client-server, three-tier design:
 
 Modeled with an Entity Relationship Diagram and mapped to a relational schema in third normal form.
 
-![ERD](./crime-report/erd.png)
+📄 See the full diagram on page 1 of [`CrimeReport-Screenshots.pdf`](./CrimeReport-Screenshots.pdf).
 
 **Main tables:** `Resident`, `Addresses`, `CrimeReport`, `CrimeCategory`, `Policeman`, `ResponseAction`
 
@@ -132,55 +136,18 @@ Key rules:
 
 ## 📸 Application Screenshots
 
-### Login & Admin
+📄 **[View the ERD and all application screenshots (PDF)](./CrimeReport-Screenshots.pdf)**
 
-| Login | Admin Dashboard |
+The PDF has one titled page per screen:
+
+| Role | Screens |
 |---|---|
-| ![Login](./crime-report/login.png) | ![Admin](./crime-report/admin-dashboard.png) |
-
-**Admin: manage crime reports**
-
-![Manage reports](./crime-report/admin-manage-reports.png)
-
-### Resident
-
-| Resident Portal | Report a Crime |
-|---|---|
-| ![Resident](./crime-report/resident-portal.png) | ![Report](./crime-report/resident-report-crime.png) |
-
-### Policeman
-
-| Dashboard | My Assigned Cases |
-|---|---|
-| ![Dashboard](./crime-report/policeman-dashboard.png) | ![Cases](./crime-report/policeman-assigned-cases.png) |
-
-| Case Details | Update Case Status |
-|---|---|
-| ![Details](./crime-report/policeman-case-details.png) | ![Update](./crime-report/policeman-update-status.png) |
-
-| Response Actions | Add Response Action |
-|---|---|
-| ![Actions](./crime-report/policeman-response-actions.png) | ![Add](./crime-report/policeman-add-action.png) |
-
-**Action history**
-
-![Action history](./crime-report/policeman-action-history.png)
-
-### Supervisor
-
-| Dashboard | Review All Reports |
-|---|---|
-| ![Dashboard](./crime-report/supervisor-dashboard.png) | ![Review](./crime-report/supervisor-review-reports.png) |
-
-**Assign cases to officers**
-
-![Assign cases](./crime-report/supervisor-assign-cases.png)
-
-### Validation & Feedback
-
-| Invalid login | Report submitted | Case assigned |
-|---|---|---|
-| ![Invalid login](./crime-report/test-invalid-login.png) | ![Submitted](./crime-report/test-report-submitted.png) | ![Assigned](./crime-report/test-case-assigned.png) |
+| **Login** | Login page |
+| **Admin** | Dashboard, manage crime reports |
+| **Resident** | Resident portal, report a crime |
+| **Policeman** | Dashboard, my assigned cases, case details & investigation, update case status, response actions, add response action, action history |
+| **Supervisor** | Dashboard, review all reports, assign cases to officers |
+| **Tests** | Invalid login message, report submitted successfully, case assigned successfully |
 
 ## 🛠️ Tech Stack
 
@@ -193,3 +160,4 @@ Key rules:
 ## 📄 Full Project Report
 
 The complete report (architecture, business requirements, ERD, schema mapping, DDL/DML scripts, queries, stored procedures, functions, transactions, cursors, views and security roles) is available here: **[I3306-CrimeReport-doc.docx](./I3306-CrimeReport-doc.docx)**
+
